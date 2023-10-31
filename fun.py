@@ -4,6 +4,8 @@ import tkinter as tk
 from tkinter import ttk
 root=Tk()
 root.geometry('500x200')
+root.title("weather checker")
+root.iconbitmap('cloudy.ico')
 label1=Label(root, text="check weather outside your house")
 label1.pack()
 
@@ -44,7 +46,7 @@ def weather():
         root.destroy()
         fuck()
     
-    root.after(1000, load)
+    root.after(3000, load)
 
 
 
